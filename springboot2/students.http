@@ -1,0 +1,41 @@
+### Add Student
+POST http://localhost:8080/students/add
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Anitha",
+  "course": "Java"
+}
+
+### Add Another Student
+POST http://localhost:8080/students/add
+Content-Type: application/json
+
+{
+  "id": 2,
+  "name": "Lakshmi",
+  "course": "Spring Boot"
+}
+
+### Get All Students
+GET http://localhost:8080/students/all
+
+### Get Student By ID
+GET http://localhost:8080/students/student/1
+
+### Update Student
+PUT http://localhost:8080/students/update/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Anitha Updated",
+  "course": "Advanced Java"
+}
+
+### Delete Student
+DELETE http://localhost:8080/students/delete/1
+
+### Get All After Deletion
+GET http://localhost:8080/students/all
